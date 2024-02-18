@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RestauranteMesa.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:RestauranteMesa.View"
+    xmlns:views="clr-namespace:RestauranteMesa.View"
+    Shell.TabBarTitleColor="white" 
+    Shell.PresentationMode="Animated"
+    Shell.FlyoutBehavior="Disabled"    
+    Title="Restaurante - Mesa">
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+
+    <TabBar >
+        <Tab Title="Home" Icon="home.png" >
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}"/>
+        </Tab>
+        <Tab Title="Livres" Icon="free.png">
+            <ShellContent   ContentTemplate="{DataTemplate views:Livres}"/>
+        </Tab>
+        <Tab Title="Ocupados" Icon="busy.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Livres}"/>
+        </Tab>
+        <Tab Title="Sair" Icon="exit.png" >
+            <ShellContent ContentTemplate="{DataTemplate views:Livres}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
+
+    
